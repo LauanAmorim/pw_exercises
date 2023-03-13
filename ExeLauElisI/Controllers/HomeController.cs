@@ -22,9 +22,13 @@ namespace ExeLauElisI.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
+        }
+
+        public ActionResult RedirectTempAluno()
+        {
+            TempData["MVCPattern"] = "O MVC é um padrão de desenvolvimento muito utilizado no mundo web é conhecido por 'forçar' o programador a separar as responsabilidades.";
+            return RedirectToAction("Aluno", "Aula");
         }
     }
 }

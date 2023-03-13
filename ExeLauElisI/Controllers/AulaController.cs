@@ -24,5 +24,10 @@ namespace ExeLauElisI.Controllers
             ViewBag.MelhoresAlunos = "Os melhores alunos são aqueles que estudam mais!";
             return View();
         }
+
+        public ActionResult GoogleRedirect()
+        {
+            return Redirect("https://google.com");
+        }
     }
 }
