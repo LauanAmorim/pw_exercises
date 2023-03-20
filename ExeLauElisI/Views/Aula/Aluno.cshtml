@@ -3,9 +3,9 @@
     ViewBag.Title = "Estudo";
 }
 
-<h1>Aluno</h1>
+<h1>@ViewBag.Aluno</h1>
 
-<h1>@ViewBag.MelhoresAlunos</h1>
+<h1>@ViewData["MelhoresAlunos"]</h1>
 <h1>@TempData["MVCPattern"]</h1>
 @Html.ActionLink("Google", "GoogleRedirect")
 

@@ -15,13 +15,14 @@ namespace ExeLauElisI.Controllers
         }
 
         public ActionResult MenuRedirect()
-        {
+        {   
             return RedirectToAction("Index", "Home");
         }
 
         public ActionResult Aluno()
         {
-            ViewBag.MelhoresAlunos = "Os melhores alunos são aqueles que estudam mais!";
+            ViewBag.aluno = "Aluno";
+            ViewData["MelhoresAlunos"] = "Os melhores alunos são aqueles que estudam mais!";
             return View();
         }
 
