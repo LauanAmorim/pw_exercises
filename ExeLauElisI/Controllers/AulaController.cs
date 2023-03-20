@@ -21,9 +21,13 @@ namespace ExeLauElisI.Controllers
 
         public ActionResult Aluno()
         {
-            ViewBag.aluno = "Aluno";
+            ViewBag.Aluno = "Aluno";
             ViewData["MelhoresAlunos"] = "Os melhores alunos são aqueles que estudam mais!";
-            return View();
+            if (TempData["MVCPattern"] != null)
+            {
+                ViewBag.MVCPattern = TempData["MVCPattern"];
+            }
+                return View();
         }
 
         public ActionResult GoogleRedirect()
